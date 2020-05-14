@@ -1,0 +1,46 @@
+﻿<Window x:Class="Rejestracja_użytkownika.WidokUżytkownika"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rejestracja_użytkownika"
+        mc:Ignorable="d"
+        Background="Moccasin"
+        Title="WidokUżytkownika" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="34,32,0,0" TextWrapping="Wrap" Text="Nazwa Wydarzenia: " VerticalAlignment="Top" Width="107"/>
+        <TextBlock HorizontalAlignment="Left" Margin="93,100,0,0" TextWrapping="Wrap" Text="Agenda:" VerticalAlignment="Top" Width="48"/>
+        <TextBlock HorizontalAlignment="Left" Margin="34,180,0,0" TextWrapping="Wrap" Text="Termin Wydarzenia:" VerticalAlignment="Top" Width="107"/>
+        <TextBlock HorizontalAlignment="Left" Margin="49,256,0,0" TextWrapping="Wrap" Text="Typ uczestnictwa:" VerticalAlignment="Top" Width="92"/>
+        <TextBlock HorizontalAlignment="Left" Margin="74,342,0,0" TextWrapping="Wrap" Text="Wyżywienie:" VerticalAlignment="Top" Width="67"/>
+        <ComboBox HorizontalAlignment="Left" Margin="146,336,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>
+                Bez preferencji
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Wegetariańskie
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Bez glutenu
+            </ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="146,250,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem>
+                Słuchacz
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Autor
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Sponsor
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Organizator
+            </ComboBoxItem>
+        </ComboBox>
+        <DatePicker HorizontalAlignment="Left" Margin="146,172,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Tb_Agenda" HorizontalAlignment="Left" Height="23" Margin="146,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <ComboBox x:Name="ComboBoxNazwyWydarzenia" HorizontalAlignment="Left" Margin="146,26,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="PowrótDoLogowania" Content="Powrót do Logowania" HorizontalAlignment="Left" Margin="625,317,0,0" VerticalAlignment="Top" Width="129" Height="43" Click="PowrótDoLogowania_Click"/>
+    </Grid>
+</Window>

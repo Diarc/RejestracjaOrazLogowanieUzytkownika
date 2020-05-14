@@ -1,0 +1,55 @@
+﻿<Window x:Class="Rejestracja_użytkownika.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rejestracja_użytkownika"
+        mc:Ignorable="d"
+        Title="Okno Rejestracji" Height="450" Width="1008.25" Background="Moccasin">
+    <Grid Margin="0,0,2,0">
+        <TextBox x:Name="Tb_imienia" HorizontalAlignment="Left" Height="23" Margin="204,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_imienia_TextChanged"/>
+        <TextBox x:Name="Tb_nazwiska" HorizontalAlignment="Left" Height="23" Margin="204,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_nazwiska_TextChanged"/>
+        <TextBox x:Name="Tb_stanowiska" HorizontalAlignment="Left" Height="23" Margin="204,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_stanowiska_TextChanged"/>
+        <TextBox x:Name="Tb_emaila" HorizontalAlignment="Left" Height="23" Margin="204,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_emaila_TextChanged"/>
+        <TextBox x:Name="Tb_Loginu" HorizontalAlignment="Left" Height="23" Margin="204,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_Loginu_TextChanged"/>
+        <TextBox x:Name="Tb_hasła" HorizontalAlignment="Left" Height="23" Margin="204,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_hasła_TextChanged"/>
+        <TextBox x:Name="Tb_potwierdzenia_hasła" HorizontalAlignment="Left" Height="23" Margin="204,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Tb_potwierdzenia_hasła_TextChanged"/>
+        <Label Content="Wprowadź Imię:" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Height="32" Width="189"/>
+        <Label Content="Wprowadź Nazwisko:" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Height="33" Width="189"/>
+        <Label Content="Wprowadź Stanowisko:" HorizontalAlignment="Left" Margin="10,106,0,0" VerticalAlignment="Top" Height="33" Width="189"/>
+        <Label Content="Wprowadź Płeć:" HorizontalAlignment="Left" Margin="10,144,0,0" VerticalAlignment="Top" Height="33" Width="189"/>
+        <Label Content="Wprowadź Email:" HorizontalAlignment="Left" Margin="10,182,0,0" VerticalAlignment="Top" Height="35" Width="189"/>
+        <Label Content="Wprowadź Login:" HorizontalAlignment="Left" Margin="10,222,0,0" VerticalAlignment="Top" Height="36" Width="189"/>
+        <Label Content="Wprowadź Hasło:" HorizontalAlignment="Left" Margin="10,263,0,0" VerticalAlignment="Top" Height="36" Width="189"/>
+        <Label Content="Potwierdź Hasło:" HorizontalAlignment="Left" Margin="10,304,0,0" VerticalAlignment="Top" Height="33" Width="189"/>
+        <TextBlock x:Name="tBlock_imienia" HorizontalAlignment="Left" Margin="340,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_nazwiska" HorizontalAlignment="Left" Margin="340,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_stanowiska" HorizontalAlignment="Left" Margin="340,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_płci" HorizontalAlignment="Left" Margin="340,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_emailu" HorizontalAlignment="Left" Margin="340,182,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_Loginu" HorizontalAlignment="Left" Margin="340,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_hasła" HorizontalAlignment="Left" Margin="340,263,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <TextBlock x:Name="tBlock_potwierdzenia_hasła" HorizontalAlignment="Left" Margin="340,304,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="23" Width="425"/>
+        <Button Content="Zatwierdź dane" HorizontalAlignment="Left" Margin="204,357,0,0" VerticalAlignment="Top" Width="120" Height="34" Click="Button_Click"/>
+        <ComboBox x:Name="ComboBox_Płeć" HorizontalAlignment="Left" Margin="204,145,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_Płeć_SelectionChanged" >
+            <ComboBoxItem>
+                Mężczyzna
+            </ComboBoxItem>
+            <ComboBoxItem>
+                Kobieta
+            </ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="ComboBox_Roli" HorizontalAlignment="Left" Margin="834,162,0,0" VerticalAlignment="Top" Width="125" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBoxItem>
+                Admin
+            </ComboBoxItem>
+            <ComboBoxItem>
+                User
+            </ComboBoxItem>
+        </ComboBox>
+        <Label Content="Wybierz rodzaj konta:&#xD;&#xA;(admin czy user)" HorizontalAlignment="Left" Margin="834,106,0,0" VerticalAlignment="Top" Height="41" Width="125"/>
+        <TextBlock x:Name="TextBlock_rodzajuKonta" HorizontalAlignment="Left" Margin="834,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="49" Width="125"/>
+        <Button x:Name="Przejscie_do_Logowania" Content="Przejdź do Logowania" HorizontalAlignment="Left" Margin="834,349,0,0" VerticalAlignment="Top" Width="125" Height="42" Click="Przejscie_do_Logowania_Click"/>
+
+    </Grid>
+</Window>

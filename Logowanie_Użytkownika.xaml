@@ -1,0 +1,21 @@
+﻿<Window x:Class="Rejestracja_użytkownika.Logowanie_Użytkownika"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Rejestracja_użytkownika"
+        mc:Ignorable="d"
+        Background="Moccasin"
+        Title="Logowanie_Użytkownika" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TextBox_Loginu" HorizontalAlignment="Left" Height="35" Margin="139,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="133" FontSize="16"/>
+        <Label Content="Login:" HorizontalAlignment="Left" Margin="85,97,0,0" VerticalAlignment="Top" Width="54" Height="34" FontSize="16"/>
+        <Label Content="Hasło:" HorizontalAlignment="Left" Margin="85,172,0,0" VerticalAlignment="Top" Width="54" Height="34" FontSize="16"/>
+        <Button x:Name="Zaloguj" Content="Zaloguj" HorizontalAlignment="Left" Margin="139,247,0,0" VerticalAlignment="Top" Width="133" Height="32" Click="Zaloguj_Click"/>
+        <PasswordBox x:Name="txt_Hasło" HorizontalAlignment="Left" Margin="139,164,0,0" VerticalAlignment="Top" Width="133" Height="34" FontSize="16">
+        </PasswordBox>
+        <CheckBox x:Name="CheckBoxHasła" Content="Odkryj/Ukryj tekst" HorizontalAlignment="Left" Margin="313,172,0,0" VerticalAlignment="Top" Width="127" Checked="CheckBoxHasła_Checked"/>
+        <Button x:Name="CofnijDoRejestracji" Content="Cofnij do Rejestracji" HorizontalAlignment="Left" Margin="656,313,0,0" VerticalAlignment="Top" Width="117" Height="56" Click="CofnijDoRejestracji_Click"/>
+
+    </Grid>
+</Window>
