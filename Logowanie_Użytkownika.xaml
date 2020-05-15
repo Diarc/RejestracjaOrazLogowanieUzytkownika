@@ -14,7 +14,7 @@
         <Button x:Name="Zaloguj" Content="Zaloguj" HorizontalAlignment="Left" Margin="139,247,0,0" VerticalAlignment="Top" Width="133" Height="32" Click="Zaloguj_Click"/>
         <PasswordBox x:Name="txt_Hasło" HorizontalAlignment="Left" Margin="139,164,0,0" VerticalAlignment="Top" Width="133" Height="34" FontSize="16">
         </PasswordBox>
-        <CheckBox x:Name="CheckBoxHasła" Content="Odkryj/Ukryj tekst" HorizontalAlignment="Left" Margin="313,172,0,0" VerticalAlignment="Top" Width="127" Checked="CheckBoxHasła_Checked"/>
+        <CheckBox x:Name="CheckBoxHasła" Content="Odkryj/Ukryj tekst" HorizontalAlignment="Left" Margin="313,172,0,0" VerticalAlignment="Top" Width="127"/>
         <Button x:Name="CofnijDoRejestracji" Content="Cofnij do Rejestracji" HorizontalAlignment="Left" Margin="656,313,0,0" VerticalAlignment="Top" Width="117" Height="56" Click="CofnijDoRejestracji_Click"/>
 
     </Grid>
