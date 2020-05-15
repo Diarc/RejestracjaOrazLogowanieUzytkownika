@@ -492,7 +492,7 @@ namespace Rejestracja_użytkownika
 
             SmtpClient client = new SmtpClient();
             client.UseDefaultCredentials = false;
-            client.Credentials = new NetworkCredential("automatycznywarczakkamil@gmail.com", "autmaipaw");
+            client.Credentials = new NetworkCredential("automatycznywarczakkamil@gmail.com", "Kennedy2251");
             client.Host = "smtp.gmail.com";
             client.UseDefaultCredentials = false;
             client.Port = 587;
